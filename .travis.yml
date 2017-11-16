@@ -13,7 +13,7 @@ script: true
 # branch whitelist, only for GitHub Pages
 branches:
   only:
-  - master
+  - build
 
 # deploy to githup pages
 deploy:
