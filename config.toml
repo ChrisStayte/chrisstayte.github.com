@@ -1,0 +1,66 @@
+title = "Chris Stayte Blog"
+baseURL = "https://example.com"
+theme = "bilberry-hugo-theme"
+
+enableRobotsTXT = true
+
+# Change to your content language. Supported values: en, de, es, fr, ru
+DefaultContentLanguage = "en"
+
+# Enable / Disable Google Analytics statistics for your site
+googleAnalytics = ""
+
+# Enable / Disable comments on the articles via Disqus.
+disqusShortname = "blog-chrisstayte"
+
+[params]
+  # Favicon for the browser's favorites and tabs
+  favicon = "" # set a favicon icon
+
+  # Description and meta data for the search engines
+  author = "Chris Stayte"
+  description = "My Life Through These Posts"
+  keywords = "blog,personal,developer,chris,stayte"
+
+  # How many articles should be displayed at once?
+  paginate = 7
+
+  # Enable / Disable algolia search
+  algolia_search    = true
+  algolia_appId     = "W1G3TMVYQB"
+  algolia_apiKey    = "901cb70cbfae05ee44c6606c3e331d9c"
+  algolia_indexName = "search_blog"
+
+  # Header configuration
+    # your subtitle if you want to use any
+    subtitle = "Travel The World... Through My Head"
+
+    # if you want to use gravatar for the header image
+    gravatarEMail = ""
+
+    # set an path to the image file you want to use | overwrites gravatar
+    customImage = "/images/profile_pic.png"
+
+    # always display the top navigation (with pages and search) on non-mobile screens
+    permanentTopNav = false
+
+  # social media profile urls for the footer links
+  facebook   = ""
+  twitter    = "https://twitter.com/ChrisStayte"
+  googleplus = ""
+  pinterest  = ""
+  instagram  = ""
+  tumblr     = ""
+  youtube    = "https://youtube.com/ChrisStayte"
+  vimeo      = ""
+  github     = "https://github.com/ChrisStayte"
+
+# don't change anything here
+[taxonomies]
+  author   = "author"
+  tag      = "tags"
+  category = "categories"
+
+[outputs]
+  home = [ "HTML", "JSON" ]
+  page = [ "HTML" ]
