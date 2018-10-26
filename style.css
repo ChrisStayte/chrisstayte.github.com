@@ -2,129 +2,102 @@ body {
   width: 100%;
   align-items: center;
   line-height: 1.25;
-  font-family: 'Hind', sans-serif;
+  font-family: Hind, sans-serif;
   display: flex;
   flex-direction: column;
+  background: #efefef;
 }
-
-body, p {
+body,
+p {
   margin: 0;
   padding: 0;
 }
-
 .wrapper {
   margin: 3em auto;
   max-width: 960px;
 }
-
-.wrapper, .main-intro, .twitter, footer {
+.main-intro,
+.twitter,
+.wrapper,
+footer {
   padding: 0 1em;
 }
-
 .main-intro h2 {
   font-weight: 300;
-  font-size: 1.5em;
-  color: slategray;
+  font-size: 1.25em;
+  color: #708090;
 }
-
 .projects {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
 }
-
-.project {
-  height: 160px; 
+.projects a {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
+  flex: 1 1 30%;
+  height: 160px;
   text-align: center;
-  flex: 1 300px;
   padding: 2em;
   margin: 1.2em;
-  border-radius: .5em;
-  transition: transform .5s;
+  border-radius: 0.5em;
+  transition: transform 0.5s;
+  background: #fff;
+  text-decoration: none;
+  color: #000;
 }
-
-.project svg {
+.projects a svg {
   width: 4em;
-  fill: white;
-  margin-bottom: 2em;
 }
-
-.project p {
+.projects a p {
   font-size: 1em;
   font-weight: 500;
   backface-visibility: hidden;
 }
-
-.project a {
-  text-decoration: none;
-  color: white;
-  display: block;
-}
-
-.twitter {
+.twitter svg {
   margin: 2em 0;
 }
-
-.node {
-  background: #339933;
+.node svg {
+  fill: #393;
+}
+.dribbble svg {
+  fill: #ea4c89;
+}
+.insta svg {
+  fill: #e4405f;
 }
 
-.dribbble {
-  background: #EA4C89;
+.blog svg {
+  fill: #6d678f;
 }
 
-.insta {
-  background: #E4405F;
+.git svg {
+  fill: #181717;
 }
-
-.git {
-  background: #181717;
+.codepen svg {
+  fill: #000;
 }
-
-.codepen {
-  background: black;
+.linkedin svg {
+  fill: #0077b5;
 }
-
-.linkedin {
-  background: #0077B5;
-}
-
-.blog {
-  background: #4C3671;
-}
-
 footer {
   margin-top: 2em;
-  color: slategray;
+  color: #708090;
 }
-
 footer a {
-  color: black;
+  color: #000;
 }
-
 .love {
   color: red;
-  margin: 0 .25em;
+  margin: 0 0.25em;
 }
-
-@media (min-device-width: 768px) {
-  .project {
-    flex: 1 200px;
-  }
-}
-
 @media (min-width: 960px) {
   .main-intro h2 {
     font-size: 2em;
   }
-  .project {
-    flex: 1 150px;
-  }
-  .project:hover {
+  .projects a:hover {
     transform: scale(1.1);
   }
 }
