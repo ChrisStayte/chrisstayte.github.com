@@ -33,7 +33,7 @@ function App() {
                 <tr>
                   <td>1</td>
                   <td>
-                    <a href='https://projects.chrisstayte.com/unitconverter'>
+                    <a href='https://chrisstayte.app/unitconverter'>
                       Unit Converter
                     </a>
                   </td>
