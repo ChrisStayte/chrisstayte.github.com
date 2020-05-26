@@ -10,7 +10,7 @@ function App() {
     <React.Fragment className='App'>
       <Container>
         <Col>
-          <Row>
+          <Row className='mt-5'>
             <h1 className='align-center'>Projects</h1>
           </Row>
           <Row>
